@@ -27,14 +27,65 @@ body{
 	background: url("http://localhost/goPalilula/wp-content/themes/palilulars/img/bg.jpg") repeat-x top left;
 	font-family: arial, helvetica, sans-serif;
 }
-/* .wrap{
-	background-color: #ffffff;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-} */
-.mainContent{
-	/* text-shadow: #000 0px 0px 0px; */
+
+
+/*
+=========================================
+	New Css  -  Left Menu
+=========================================
+*/
+
+.leftSide{
+	background-color: #f9f9f9;
+}
+
+
+.logoLeft{
+	border-bottom: 3px solid #324669;
+	padding: 15px 0 15px 0;
+}
+
+.logoLeft > img{
+	height: 125px;
+	display: block;
+	margin: 0 auto;
+
+}
+.leftMenu{
+
+}
+.leftMenu a{
+	display: block;
+	padding: 15px 0 15px 15px;
+	border-bottom: 1px solid #324669;
+	text-decoration: none;
+
+}
+.leftMenu a:hover { 
+    background-color: #e0e0e0;
+}
+.leftCert{
+	padding-top: 30px;
+	text-align: center;
+}
+
+/*
+=========================================
+	New Css  -  Main Center
+=========================================
+*/
+
+.home_slider {
+	margin-top:10px;
+	 box-shadow: 0px 0px 5px #999;
+	 -moz-box-shadow:  0px 0px 5px #999;
+	 -webkit-box-shadow: 0px 0px 5px #999;
+}
+
+.slide_image img{
+	  display: block;
+  width: 100%;
+  height: auto;
 }
 .topHeader a{
 	color:white;
@@ -102,40 +153,9 @@ p.excrpt {
 	background-color: #f9f9f9;
 }
 
-.sidebarOne p{
-	/* padding-left: 15px; */
-	/* border-bottom: 3px solid #324669; */
-	line-height: 50px;
-	font-family: verdana,arial;
-	font-size: 12px;
-	color: #23527c;
-	border-bottom: 1px solid #b3b3b3;
-	overflow: hidden;
-}
+
 .sidebarOne a{
 	text-decoration: none;
-}
-.sidebarOne .MnLv {
-	line-height: 35px;
-	border-top: 3px solid #324669;
-    border-bottom: 1px solid #b3b3b3;
-    color: #860200;
-    font-size: 17px;
-    font-family: verdana,arial, sans-serif;
-    background: url("http://localhost/goPalilula/wp-content/themes/palilulars/img/arrow-down1.png") 200px no-repeat;
-}
-.logoLeft{
-	height: 105px;
-	display: block;
-	margin: 15px auto 15px auto;
-	/* border: 3px solid #324669; */
-	/* padding: 30px; */
-}
-.arrow{
-background: url('http://localhost/goPalilula/wp-content/themes/palilulars/img/arrow.png')  190px center no-repeat ;
-}
-.arrow:hover{
-background: url('http://localhost/goPalilula/wp-content/themes/palilulars/img/arrow2.png')  190px center no-repeat #f9f9f9;
 }
 
 .sidebarTwo{
@@ -144,12 +164,7 @@ background: url('http://localhost/goPalilula/wp-content/themes/palilulars/img/ar
 .sidebarTwo img {
 	margin-bottom: 10px;
 }
-.slide-margin {
-	margin-top:10px;
-	 box-shadow: 0px 0px 5px #999;
-	 -moz-box-shadow:  0px 0px 5px #999;
-	 -webkit-box-shadow: 0px 0px 5px #999;
-}
+
 
 /* ---------SINGLE POST---------*/
 

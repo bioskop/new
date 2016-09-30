@@ -1,51 +1,43 @@
 <?php get_header(); ?>
-		<div class="row mainContent">
-			<div class="col-md-3">
-				<img class="logoLeft" src="<?php echo bloginfo('template_directory') . '/img/grb.gif'; ?>" alt="Logo">
-					<?php global $blog_id;
-							if( $blog_id == '2' ) {
-					?>
-							<ul>
-								<li>
-									 <p class="MnLv"></p>
 
-									<a href="#"><p class="arrow">Site map</p></a>
-									<a href="#"><p class="arrow">Usefull links</p> </a>
-									<a href="#"><p class="arrow">Важни телефони</p> </a>
-									<a href="#"><p class="arrow">Галерија слика</p> </a>
-									<a href="#"><p class="arrow">Документа</p> </a>
-									<a href="#"><p class="arrow">Информатор</p> </a>
-									<a href="#"><p class="arrow">Архива</p> </a>
-									<a href="#"><p class="arrow">Контакт</p> </a>
-								</li>
-							</ul>					
-					<?php   } else {	?>
-							<ul>
-								<li>
-									 <p class="MnLv"></p>
+<div class="col-xs-12 col-sm-3 leftSide">
+	<div class="logoLeft">
+		<img src="<?php echo bloginfo('template_directory') . '/img/grb.gif'; ?>" alt="Logo">
+	</div>
+	<?php global $blog_id;
+			if( $blog_id == '2' ) {
+	?>
+	<div class="leftMenu">		
+		<a href="#"><span class="arrow">Site map</span></a>
+		<a href="#"><span class="arrow">Usefull links</span> </a>
+		<a href="#"><span class="arrow">Важни телефони</span> </a>
+		<a href="#"><span class="arrow">Галерија слика</span> </a>
+		<a href="#"><span class="arrow">Документа</span> </a>
+		<a href="#"><span class="arrow">Информатор</span> </a>
+		<a href="#"><span class="arrow">Архива</span> </a>
+		<a href="#"><span class="arrow">Контакт</span> </a>
+	</div>				
+<?php   } else {	?>
+	<div class="leftMenu">
+		<a href="#"><span class="arrow">Мапа сајта</span></a>
+		<a href="#"><span class="arrow">Корисни линкови</span> </a>
+		<a href="#"><span class="arrow">Важни телефони</span> </a>
+		<a href="#"><span class="arrow">Галерија слика</span> </a>
+		<a href="#"><span class="arrow">Документа</span> </a>
+		<a href="#"><span class="arrow">Информатор</span> </a>
+		<a href="#"><span class="arrow">Архива</span> </a>
+		<a href="#"><span class="arrow">Контакт</span> </a>
+	</div>
+	<?php	}	?>
+	<div class="leftCert">
+		<img src="<?php echo bloginfo('template_directory') . '/img/iso.jpg'; ?>" alt="">
+	</div>
+	<ul><?php dynamic_sidebar('firstsidebar'); ?></ul>
+	<ul><?php dynamic_sidebar('secondsidebar'); ?></ul>
+	<ul><?php dynamic_sidebar('thirdsidebar'); ?></ul>
+</div>	<!-- End left side -->
 
-									<a href="#"><p class="arrow">Мапа сајта</p></a>
-									<a href="#"><p class="arrow">Корисни линкови</p> </a>
-									<a href="#"><p class="arrow">Важни телефони</p> </a>
-									<a href="#"><p class="arrow">Галерија слика</p> </a>
-									<a href="#"><p class="arrow">Документа</p> </a>
-									<a href="#"><p class="arrow">Информатор</p> </a>
-									<a href="#"><p class="arrow">Архива</p> </a>
-									<a href="#"><p class="arrow">Контакт</p> </a>
-								</li>
-							</ul>
-					<?php	}	?>
-
-					<img src="<?php echo bloginfo('template_directory') . '/img/iso.jpg'; ?>" alt="">
-
-					<ul><?php dynamic_sidebar('firstsidebar'); ?></ul>
-					<ul><?php dynamic_sidebar('secondsidebar'); ?></ul>
-					<ul><?php dynamic_sidebar('thirdsidebar'); ?></ul>
-				</div>	
-			</div>
-
-			<div class="col-md-6">
-
+<div class="col-xs-12 col-sm-6">
 
 				<!-- SLIDER START -->
 			<div class="slide-margin">
@@ -55,16 +47,13 @@
 						);
 					$the_query = new WP_Query($args);
 					if($the_query->have_posts()):
+						while($the_query->have_posts()) : $the_query->the_post();
 				?>
-				<div class="home_slider">
-				<?php
-					while($the_query->have_posts()) : $the_query->the_post();
-				?>
-
+			<div class="home_slider">
 			 <div class="slide">
-				 	<a href="<?php the_permalink(); ?>">
+				 <a href="<?php the_permalink(); ?>">
 				 	<div class="slide_image">
-						<?php the_post_thumbnail('homepage-slider') ?>
+						<?php the_post_thumbnail() ?>
 					</div>
 					<div class="slide_title">
 						<?php the_title() ?>
@@ -109,7 +98,7 @@
 			</div> <!-- end col-md-6 -->
 
 
-		<div class="col-md-3 sidebarTwo">
+		<div class="col-xs-12 col-sm-3 sidebarTwo">
 			<a href="#"><img src="<?php echo bloginfo('template_directory') . '/img/gradNis.png'; ?>" alt=""></a>
 			<a href="#"><img src="<?php echo bloginfo('template_directory') . '/img/ban1.png'; ?>" alt=""></a>
 			<a href="#"><img src="<?php echo bloginfo('template_directory') . '/img/ban2.png'; ?>" alt=""></a>
