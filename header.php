@@ -21,17 +21,25 @@
 		<?php wp_head(); ?>
 	</head>
 
-<!-- <?php echo is_single() ? "<body class='single'>" : '<body>'; ?> -->  <!-- ako je strana single daje mu tu klasu -->
+	<?php
 
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v2.3&appId=179145445497255";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+		if( is_front_page() ):
+			$awesome_classes = array( 'awesome-class', 'my-class' );
+		else:
+			$awesome_classes = array( 'no-awesome-class' );
+		endif;
+
+	?>
+<body <?php body_class( $awesome_classes ); ?>>
+
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v2.3&appId=179145445497255";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="container">
 				<!-- <div class="container1">
@@ -48,9 +56,11 @@
 							<?php 	} ?>
 				</div> -->
 	<!--	</div> -->
-		<div class="midHeader">
-			<img src="<?php echo bloginfo('template_directory') . '/img/gop9b.jpg'; ?>" alt="Gradska opstina Palilula">
-		</div>
+		
+			<!-- <img src="<?php echo bloginfo('template_directory') . '/img/gop9b.jpg'; ?>" alt="Gradska opstina Palilula"> 
+			-->
+	<img src="<?php header_image(); ?>" class="img-responsive" alt="" />
+		
 
 		<div class="row">
 			<div class="col-xs-12">
@@ -77,19 +87,6 @@
 					)
 				);
 			?>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-					</ul>
-				</li>
-			</ul>
 		</div><!--/.nav-collapse -->
 	</div><!--/.container-fluid -->
 </nav>

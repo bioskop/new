@@ -140,6 +140,7 @@ add_action( 'widgets_init', 'palilulars_widgets_init' );
 
 /*SUPPORT FOR THUMBNAIL*/
  add_theme_support( 'post-thumbnails' );
+ add_theme_support('custom-header');
 
 if(function_exists('add_image_size')){
  add_image_size('homepage-slider', 460, 308, true);

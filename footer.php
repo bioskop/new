@@ -5,7 +5,6 @@
 			</p>
 		</div>
 				</div> <!-- END ROW -->
-	</div> <!-- END WRAP -->
 <?php wp_footer(); ?>
 		</div> <!--END CONTAINER -->
 	</body>

@@ -1,20 +1,4 @@
 
-/* -----------BOOTSTRAP MODS----------- */
-p{
-	margin: 0;
-}
-th {
-  font-weight: normal;
-}
-.container {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.row{
-	margin-left: 0px;
-	margin-right: 0px;
-}
-/*---------- END BOOTSTRAP MODS --------------*/
 ol, ul, li {
 	list-style: none;
 	padding: 0;
@@ -43,12 +27,12 @@ body{
 	background: url("http://localhost/goPalilula/wp-content/themes/palilulars/img/bg.jpg") repeat-x top left;
 	font-family: arial, helvetica, sans-serif;
 }
-.wrap{
+/* .wrap{
 	background-color: #ffffff;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-}
+} */
 .mainContent{
 	/* text-shadow: #000 0px 0px 0px; */
 }

@@ -1,12 +1,7 @@
 <?php get_header(); ?>
-	<div class="container wrap">
 		<div class="row mainContent">
-
-			<div class="col-md-3 sidebarOne">
-				<div class="Sidebar1in">
-					<span style="width:220px;display:block;margin-bottom:15px;">
-						<img class="logoLeft" src="<?php echo bloginfo('template_directory') . '/img/grb.gif'; ?>" alt="Logo">
-					</span>
+			<div class="col-md-3">
+				<img class="logoLeft" src="<?php echo bloginfo('template_directory') . '/img/grb.gif'; ?>" alt="Logo">
 					<?php global $blog_id;
 							if( $blog_id == '2' ) {
 					?>
