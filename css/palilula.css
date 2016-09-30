@@ -1,0 +1,582 @@
+
+/* -----------BOOTSTRAP MODS----------- */
+p{
+	margin: 0;
+}
+th {
+  font-weight: normal;
+}
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/*---------- END BOOTSTRAP MODS --------------*/
+ol, ul, li {
+	list-style: none;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+.topHeader{
+	background-color: #860200;
+}
+#header h1{
+	text-indent: -9999px;
+	height: 0px;
+}
+/* #header{
+	background-color: #324669;
+} */
+#header img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+
+body{
+	background: url("http://localhost/goPalilula/wp-content/themes/palilulars/img/bg.jpg") repeat-x top left;
+	font-family: arial, helvetica, sans-serif;
+}
+.wrap{
+	background-color: #ffffff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.mainContent{
+	/* text-shadow: #000 0px 0px 0px; */
+}
+.topHeader a{
+	color:white;
+}
+.topHeader{
+/* 	width: 960px; */
+	margin: 0 auto;
+	color: white;
+}
+/* .topf{
+	text-align: right;
+} */
+.stl_widget{
+	display:inline;
+	float: right;
+}
+.naslov {
+	border-top: 3px solid #324669;
+	border-bottom: 1px solid #b3b3b3;
+	color: #860200;
+	font-size: 17px;
+	font-family: verdana,arial, sans-serif;
+	background: url("http://localhost/goPalilula/wp-content/themes/palilulars/img/arrow-down1.png") 65px no-repeat;
+}
+
+.vazne {
+	margin-top: 10px;
+}
+.vazne p{
+	line-height: 35px;
+}
+.vesti {
+	margin-top: 30px;
+}
+.vesti p{
+	line-height: 35px;
+}
+.post-item h2 {
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 16px;
+	/* font-weight: 700; */
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+p.meta {
+	font-size: 12px;
+	color:#999;
+}
+.post-item img {
+	margin-right: 10px;
+	float: left;
+	padding: 3px;
+	border: 1px solid #bbbdc0;
+}
+p.excrpt {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+.sidebarOne {
+	font-family: arial,helvetica, sans-serif;
+	line-height: 20px;
+	margin-top: 10px;
+	background-color: #f9f9f9;
+}
+
+.sidebarOne p{
+	/* padding-left: 15px; */
+	/* border-bottom: 3px solid #324669; */
+	line-height: 50px;
+	font-family: verdana,arial;
+	font-size: 12px;
+	color: #23527c;
+	border-bottom: 1px solid #b3b3b3;
+	overflow: hidden;
+}
+.sidebarOne a{
+	text-decoration: none;
+}
+.sidebarOne .MnLv {
+	line-height: 35px;
+	border-top: 3px solid #324669;
+    border-bottom: 1px solid #b3b3b3;
+    color: #860200;
+    font-size: 17px;
+    font-family: verdana,arial, sans-serif;
+    background: url("http://localhost/goPalilula/wp-content/themes/palilulars/img/arrow-down1.png") 200px no-repeat;
+}
+.logoLeft{
+	height: 105px;
+	display: block;
+	margin: 15px auto 15px auto;
+	/* border: 3px solid #324669; */
+	/* padding: 30px; */
+}
+.arrow{
+background: url('http://localhost/goPalilula/wp-content/themes/palilulars/img/arrow.png')  190px center no-repeat ;
+}
+.arrow:hover{
+background: url('http://localhost/goPalilula/wp-content/themes/palilulars/img/arrow2.png')  190px center no-repeat #f9f9f9;
+}
+
+.sidebarTwo{
+	margin-top: 8px;
+}
+.sidebarTwo img {
+	margin-bottom: 10px;
+}
+.slide-margin {
+	margin-top:10px;
+	 box-shadow: 0px 0px 5px #999;
+	 -moz-box-shadow:  0px 0px 5px #999;
+	 -webkit-box-shadow: 0px 0px 5px #999;
+}
+
+/* ---------SINGLE POST---------*/
+
+.singleTop p{
+	border-bottom:1px solid  #7f9fd4;
+	font-size: 11px;
+	color:#666;
+}
+.singlePost {
+	margin-top: 25px;
+	/* text-shadow: #000 0px 0px 0px; */
+	/* border-right: 1px solid #7f9fd4; */
+}
+.singlePost h2 {
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 20px;
+	color:#323232;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.singlePost .singleThumb{
+	margin-top: 15px;
+}
+.singleContent{
+	margin-top: 30px;
+}
+.singleContent p{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	color:#323232;
+	padding-right: 10px;
+}
+.singleContent .alignnone {
+	padding: 3px;
+	border:1px solid #777;
+	margin-right: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: auto;
+}
+.singleInfo{
+	font-size: 13px;
+	/* text-shadow: #000 0px 0px 0px; */
+	color:#666;
+	line-height: 17px;
+}
+.singleInfo h3{
+	font-size: 13px;
+	/* text-shadow: #000 0px 0px 0px; */
+	margin-bottom: 20px;
+	margin-top: 10px;
+	color:#666;
+}
+ .singleInfo #text-2{
+	border-top: 1px solid #7f9fd4;
+	margin-top: 10px;
+}
+.singleInfo div{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	background-color: #F9FAFB;
+}
+/* -------VESTI BLOG------- */
+.naslovBlog {
+	border-bottom: 1px solid #7f9fd4;
+	color: #860200;
+	font-size: 17px;
+	margin-top: 10px;
+	line-height: 35px;
+}
+.content-blog .post-item{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #7f9fd4;
+	overflow: hidden;
+}
+/* calendar widget */
+.widget_calendar {list-style: none;}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { /* text-align: right; */ color: #860200; font-size: 17px; margin-top: 10px; /* text-align: center; */ }
+#wp-calendar thead { font-size: 15px; }
+#wp-calendar thead th { padding-bottom: 10px; padding-bottom: 10px; text-align: center; }
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:8px;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+/* #calendar_wrap{
+	margin-left: 10%;
+} */
+/* --------KATEGORIJE-------- */
+
+.widget_categories{
+/* 	margin-left: 10%; */
+	margin-top: 20px;
+
+}
+.widget_categories h2{
+	color: #860200;
+	font-size: 17px;
+}
+.widget_archive h2{
+	color: #860200;
+	font-size: 17px;
+}
+.widget_categories #cat{
+	padding:10px;
+	width: 100%;
+}
+
+/* ----------Single Page---------- */
+.singlePage h2{
+	font-family: verdana,arial, sans-serif;
+}
+.singlePage h3 {
+	border-top: 1px solid #7f9fd4;
+	padding-top: 10px;
+	margin-top: 40px;
+}
+.singlePage p{
+	margin-bottom: 10px;
+}
+
+.infoNaslov {
+	margin-top: 20px;
+}
+.singlePage ol li {
+	list-style: decimal;
+}
+.singlePage ul li{
+	list-style: circle;
+
+}
+.singlePage ul{
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.singlePage ol{
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.singlePage img{
+	padding-left: 10px;
+}
+
+
+/* ----------Pagination---------- */
+
+.navigacija {
+clear:both;
+padding:20px 0;
+position:relative;
+font-size:11px;
+line-height:13px;
+overflow: hidden;
+}
+
+.navigacija span, .navigacija a {
+display:block;
+float:left;
+margin: 2px 2px 2px 0;
+padding:6px 9px 5px 9px;
+text-decoration:none;
+width:auto;
+color:#fff;
+background: #555;
+}
+
+.navigacija a:hover{
+color:#fff;
+background: #3279BB;
+}
+
+.navigacija .current{
+padding:6px 9px 5px 9px;
+background: #3279BB;
+color:#fff;
+}
+#categories-3 label {
+	display:none;
+}
+
+
+
+.footer {
+	background-color: #f2f2f2;
+	padding-top: 25px;
+	padding-left: 10px;
+/* 	text-align: center; */
+margin-top: 50px;
+	overflow: hidden;
+	font-size: 11px;
+}
+
+.footer p{
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+
+
+.container1{
+	margin:0 auto;
+	background-color: #0170BB;
+}
+
+
+/* RESPONSIVE CSS */
+
+@media screen and (max-width: 650px) {
+	body {
+	}
+
+	#logo {
+		float: none;
+		margin: 0;
+		text-align: center;
+	}
+
+	.grid,
+	.grid-right {
+		float: none;
+	}
+
+	#featured-image .fluid-width-video-wrapper {
+		margin: 20px 0 0 0;
+	}
+
+	.top-widget {
+		float: none;
+		position: relative;
+		width: auto;
+		margin: 0 auto 10px auto;
+		text-align: center;
+	}
+
+	.top-widget .widget-title h3 {
+		text-align: center;
+	}
+
+	.js .sub-header-menu {
+		display: none;
+	}
+
+	.js .main-nav {
+		clear: both;
+		position: relative;
+		margin: 0 auto;
+		background-color: #585858;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
+		background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
+		background-image: -moz-linear-gradient(top, #585858, #3d3d3d);
+		background-image: -ms-linear-gradient(top, #585858, #3d3d3d);
+		background-image: -o-linear-gradient(top, #585858, #3d3d3d);
+		background-image: linear-gradient(top, #585858, #3d3d3d);
+
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
+	}
+
+	.js .main-nav .menu {
+		display: none;
+		position: absolute;
+		z-index: 1000;
+		top: 30px;
+		width: 100%;
+	}
+
+	.js .main-nav .menu ul {
+		margin-top: 1px;
+	}
+
+	.js .main-nav .menu li {
+		float: none;
+		border: none;
+		background-color: #fff;
+	}
+
+	.js .main-nav .menu li a {
+		height: 45px;
+		padding: 0 15px;
+		border: none;
+		border-bottom: 1px solid #f5f5f5;
+		color: #444;
+		text-shadow: none;
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 45px;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	.js .main-nav .menu li.current_page_item,
+	.js .menu .current_page_item a,
+	.js .menu .current-menu-item a {
+		background-color: #f5f5f5;
+	}
+
+	.js .main-nav .menu li li:hover {
+		background: none !important;
+	}
+
+	.js .main-nav .menu li li a {
+		position: relative;
+		padding: 0 10px 0 30px;
+	}
+
+	.js .main-nav .menu li li li a {
+		position: relative;
+		padding: 0 10px 0 40px;
+	}
+
+	.js .main-nav .menu li a:hover,
+	.js .main-nav .menu li li a:hover {
+		background-color: #f5f5f5 !important;
+		background-image: none;
+
+		filter: none;
+	}
+
+	.js .main-nav .menu li li a::before {
+		position: absolute;
+		top: 0;
+		left: 20px;
+		content: "\2013";
+	}
+
+	.js .main-nav .menu li li li a::before {
+		position: absolute;
+		top: 0;
+		left: 20px;
+		content: "\2013";
+	}
+
+	.js .main-nav .menu li li li a::after {
+		position: absolute;
+		top: 0;
+		left: 30px;
+		content: "\2013";
+	}
+
+	.js .main-nav .menu li ul {
+		visibility: visible;
+		position: static;
+		background-color: #fff;
+	}
+
+	.js .main-nav .menu ul {
+		min-width: 0;
+	}
+
+	.js .main-nav #responsive_current_menu_item {
+		display: block;
+		padding: 5px 40px 5px 10px;
+		color: #fff;
+		font-weight: 700;
+		cursor: pointer;
+	}
+
+	.js .main-nav a#responsive_menu_button {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 23px;
+		height: 30px;
+		margin-left: -30px;
+		background: url("../images/select-icons.png") 0 5px no-repeat;
+		cursor: pointer;
+	}
+
+	.js .main-nav a#responsive_menu_button.responsive-toggle-open {
+		background: url("../images/select-icons.png") 0 -46px no-repeat;
+	}
+
+	.top-menu,
+	.footer-menu li {
+		float: none;
+		font-size: 11px;
+		text-align: center;
+	}
+
+	#author-meta {
+		padding: 20px;
+	}
+
+	#wrapper .gallery .gallery-item {
+		max-width: 100%;
+	}
+
+	.hide-650 {
+		display: none;
+	}
+
+	.show-650 {
+		display: block;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	#footer {
+		text-align: center;
+	}
+
+	#footer .social-icons {
+		padding-bottom: 10px;
+		text-align: center;
+	}
+}

@@ -1,0 +1,559 @@
+/*
+Theme Name: palilulars
+Theme URI: http://www.palilula.eu
+Author: Milan
+Author URI: 
+Description: Tema uradjena za potrebe go Palilula
+Version: 1.0
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Eric Mayer's reset */
+
+/* BOOTSTRAP MODS */
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+
+
+
+/* END BOOTSTRAP MODS */
+a {
+	text-decoration: none;
+}
+.topHeader{
+	background-color: #860200;
+}
+.search{
+	width: 960px;
+	margin: 0 auto;
+}
+#searchform{
+	float: right;
+	margin-bottom:0px;
+}
+#header h1{
+	text-indent: -9999px;
+	height: 0px;
+}
+.midHeader{
+	background-color: #324669;
+}
+#header img{
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* MAIN MENU */
+.nav-bar{
+	font-family: arial, sans-serif;
+	background-color: #f2f2f2;
+}
+.menu {
+	clear: both;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2);
+	background-image: -moz-linear-gradient(top, #f2f2f2, #f2f2f2);
+	background-image: -ms-linear-gradient(top, #f2f2f2, #f2f2f2);
+	background-image: -o-linear-gradient(top, #f2f2f2, #f2f2f2);
+	background-image: linear-gradient(top, #f2f2f2, #f2f2f2);
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f2f2f2, endColorstr=#3d3d3d);
+}
+
+.main-nav {
+	clear: both;
+	width: 960px;
+	margin:0 auto;
+}
+
+.menu,
+.menu ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.menu li {
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.menu li:hover {
+	z-index: 10000;
+	white-space: normal;
+}
+
+.menu li li {
+	float: none;
+}
+
+.menu ul {
+	visibility: hidden;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+.menu li:hover > ul {
+	visibility: visible;
+	top: 100%;
+}
+
+.menu li li:hover > ul {
+	top: 0;
+	left: 100%;
+}
+
+.menu:after,
+.menu ul:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	content: ".";
+}
+
+.menu,
+.menu ul {
+	min-height: 0;
+}
+
+.menu ul,
+.menu ul ul {
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li a:hover,
+.menu li li a:hover {
+	color: #484848;
+	text-decoration: none;
+}
+
+.menu ul {
+	width: auto;
+	min-width: 15em;
+	margin-top: 1px;
+}
+
+.menu a {
+	display: block;
+	position: relative;
+	height: 45px;
+	margin: 0;
+	padding: 0 0.9em;
+	border-left: none;
+	color: #4d4d4d;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 45px;
+	white-space: nowrap;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.menu a:hover {
+	color: #b9262d;
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+	background-image: -webkit-linear-gradient(top, #fff, #fff);
+	background-image: -moz-linear-gradient(top, #fff, #fff);
+	background-image: -ms-linear-gradient(top, #fff, #fff);
+	background-image: -o-linear-gradient(top, #fff, #fff);
+	background-image: linear-gradient(top, #fff, #fff);
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff, endColorstr=#fff);
+}
+
+ul.menu > li:hover {
+	color: #b9262d;
+	background-color: #fff;
+}
+
+.menu .current_page_item a,
+.menu .current-menu-item a {
+	background-color: #f2f2f2;
+}
+
+.front-page .menu .current_page_item a {
+	background: none;
+	background-color: transparent;
+	background-image: none;
+
+	filter: none;
+}
+
+.menu li li {
+	width: auto;
+	margin: -1px 0 1px 0;
+	border: 1px solid #e5e5e5;
+	color: #444;
+	background: #fff;
+	background-image: none;
+
+	filter: none;
+}
+
+.menu li li a {
+	height: auto;
+	height: 20px;
+	padding: 5px 10px;
+	border: none;
+	color: #4d4d4d;
+	background: transparent !important;
+	text-shadow: none;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	white-space: nowrap;
+}
+
+.menu li li a:hover {
+	border: none;
+	color: #b9262d;
+	background: #f5f5f5 !important;
+	background-image: none;
+
+	filter: none;
+}
+
+.menu li li:hover {
+	background: #f5f5f5 !important;
+
+	filter: none;
+}
+
+.menu ul > li + li {
+	border-top: 0;
+}
+
+.menu li li:hover > ul {
+	top: 0;
+	left: 100%;
+}
+
+.menu > li:first-child > a {
+	border-left: none;
+}
+
+.menu a#responsive_menu_button {
+	display: none;
+}
+
+.main-nav #responsive_current_menu_item {
+	display: none;
+}
+
+/*.js .main-nav .menu {*/
+/*display: block;*/
+/*}*/
+
+/* =Primary Main Menu IE Fixes
+-------------------------------------------------------------- */
+.ie7 .menu ul {
+	background: url(../../core/images/ie7-fix.gif) repeat;
+}
+
+.ie7 .menu li li a {
+	min-width: 100%;
+}
+/* END MAIN MENU*/
+
+
+
+
+
+body{
+	background: url("http://localhost/goPalilula/wp-content/themes/palilulars/img/bg.jpg") repeat-x top left;
+}
+#wrap{
+	overflow: auto;
+	background-color: #ffffff;
+	width:960px;
+	margin:0 auto;
+}
+#wrap .mainContent {
+	float: left;
+	width: 450px;
+	margin-left: 15px;
+	margin-right: 15px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.naslov {
+	border-top: 3px solid #324669;
+	border-bottom: 1px solid #b3b3b3;
+	color: #860200;
+	font-size: 17px;	
+	font-family: verdana,arial, sans-serif;
+}
+.vazne {
+	margin-top: 10px;
+}
+.vazne p{
+	line-height: 35px;
+}
+.vesti {
+	margin-top: 30px;
+}
+.vesti p{
+	line-height: 35px;
+}
+
+.sidebarOne {
+	font-family: arial,helvetica, sans-serif;
+	line-height: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+/* 	border-bottom: 1px solid #b3b3b3; */
+	float: left;
+	width: 210px;
+	margin-top: 10px;
+	list-style: none;
+}
+
+.sidebarOne p{
+	border-top: 3px solid #324669;
+	line-height: 35px;
+	font-family: verdana,arial;
+	font-size: 17px;
+	color: #860200;
+	border-bottom: 1px solid #b3b3b3;
+}
+.sidebarOne a{
+	color:#06c;
+}
+
+#wrap .sidebarTwo{
+	float: left;
+	width: 210px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 8px;
+}
+
+#wrap .mainContent .post-item {
+	margin-bottom: 20px;
+	overflow: hidden;
+	font-family: arial, helvetica, sans-serif;
+
+}
+.post-item img {
+	padding-right: 10px;
+	float: left;
+	height: auto;
+	display: block;
+}
+.post-item h2 {
+	padding-top: 10px;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+h2 a{
+	color: #06c;
+}
+.post-item p.meta {
+/* 	background-color: #9c2323; */
+
+	color: black;
+	font-size: 0.8em;
+ /* padding: 0 10px;  */
+ 	/* margin-left: 250px;  */
+	margin-bottom: 14px;
+/* 	width: 90px; */
+/* 	min-width: 150px; */
+/* 	text-align: center; */
+/* 	border: black 1px solid; */
+}
+
+p.excrpt {
+	display:inline;
+	font-size: 15px;	
+	line-height: 20px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.mainContent .more {
+	float:right;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid red;
+}
+
+
+/* SINGLE POST */
+
+.singleTop p{
+	border-bottom:1px solid  #7f9fd4;
+	font-size: 11px;
+	color:#666;
+}
+
+
+.singlePost {
+	padding: 10px 15px 0 15px;
+	margin-top: 10px;
+	width: 600px;
+	text-shadow: #000 0px 0px 0px;
+	float: left;
+	border-right: 1px solid #7f9fd4;
+}
+.singlePost h2 {
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 20px;
+	color:#323232;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.singleContent{
+	margin-top: 30px;
+}
+.singleContent p{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	color:#323232;
+	padding-right: 10px;
+}
+.singleContent .alignnone {
+	padding: 3px;
+	border:1px solid #777;
+	margin-right: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: auto;
+}
+.singleInfo{
+	float: left;
+	list-style: none;
+	width: 300px;
+	font-size: 13px;
+	text-shadow: #000 0px 0px 0px;
+	color:#666;
+	font-family: arial,helvetica,sans-serif;
+	line-height: 17px;
+}
+.singleInfo h3{
+	font-size: 13px;
+	text-shadow: #000 0px 0px 0px;
+	margin-bottom: 20px;
+}
+ .singleInfo #text-2{
+	border-top: 2px solid #7f9fd4;
+	padding-left: 7px;
+	margin-left: 7px;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.singleInfo div{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	background-color: #F9FAFB;
+}
+
+/* VESTI BLOG */
+#content-blog{
+	float: left;
+	width: 600px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.naslovBlog {
+	border-bottom: 1px solid #b3b3b3;
+	color: #860200;
+	font-size: 17px;	
+	font-family: verdana,arial, sans-serif;
+	margin-top: 10px;
+	line-height: 35px;
+}
+#content-blog .post-item{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DFE7F4;
+	font-family: arial, helvetica, sans-serif;
+}
+
+
+/* calendar widget */
+.widget_calendar {float: left; list-style: none;}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { text-align: right; color: #333; font-size: 14px; margin-top: 10px; margin-bottom: 15px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-bottom: 10px; padding-bottom: 10px; text-align: center; }
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:8px;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
